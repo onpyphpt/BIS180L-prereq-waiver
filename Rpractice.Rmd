@@ -1,0 +1,72 @@
+---
+title: "R practice"
+output: html_document
+---
+
+# Necessary Libraries
+
+```{r}
+library(swirl)
+library(tidyverse)
+```
+
+# **Fundamentals of R**
+
+```{r}
+swirl()
+```
+
+## Exercise 1
+
+```{r}
+sum(2000:20000)
+```
+
+## Exercise 2
+
+```{r}
+a <- 5
+b <- 2:20
+a
+b
+```
+
+a is an object assigned to 5 (numeric value). b is a vector object with values from 2 to 20 with 1 incremental (i.e., 2, 3, 4, 5, ..., 20). Then the last 2 lines are to print the values of a and b objects.
+
+## Exercise 3
+
+```{r}
+a+b
+sum(a,b)
+```
+
+The results are different; a+b is to add a (which is 5) to each of the b but sum(a,b) is adding all single numeric objects into one value.
+
+## Exercise 4
+
+```{r}
+# What is the sum of the 5th through 10th element of object b? Provide your code and the sum.
+
+sum(b[5:10])
+```
+
+## Exercise 5
+
+```{r}
+# What is the sum of the 3rd, 8th, and 10th element of b?
+sum(b[c(3,8,10)])
+```
+
+## Exercise 6
+
+# **Tidyverse**
+
+```{r}
+
+```
+
+# **GGplot**
+
+```{r}
+
+```
