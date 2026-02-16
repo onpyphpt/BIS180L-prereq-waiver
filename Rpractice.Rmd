@@ -1,19 +1,21 @@
 ---
 title: "R practice"
 output: html_document
+author: "Onpreeya Phetchpitak"
 ---
 
 # Necessary Libraries
 
 ```{r}
 library(swirl)
-library(tidyverse)
 ```
 
 # **Fundamentals of R**
 
+## Swirl Tutorial
+
 ```{r}
-swirl()
+# swirl()
 ```
 
 ## Exercise 1
@@ -31,7 +33,7 @@ a
 b
 ```
 
-a is an object assigned to 5 (numeric value). b is a vector object with values from 2 to 20 with 1 incremental (i.e., 2, 3, 4, 5, ..., 20). Then the last 2 lines are to print the values of a and b objects.
+> a is an object assigned to 5 (numeric value). b is a vector object with values from 2 to 20 with 1 incremental (i.e., 2, 3, 4, 5, ..., 20). Then the last 2 lines are to print the values of a and b objects.
 
 ## Exercise 3
 
@@ -59,14 +61,45 @@ sum(b[c(3,8,10)])
 
 ## Exercise 6
 
-# **Tidyverse**
-
 ```{r}
-
+m <- matrix(data=1:25,ncol=5,byrow=T)
+m
+m[5,5]
 ```
 
-# **GGplot**
+```{r}
+m[3,]
+
+m[,3:5]
+```
+
+When extracting from a 2-dimensional object, which number specifies rows and which specifies columns?
+
+> The first one is row and the latter one is column
+
+What does `m[3,]` do?
+
+> Print all columns in the third row.
+
+How can you extract the 3rd, 4th and 5th columns of m together as one object? `m[,3:5]`
 
 ```{r}
+cbind(m,101:105)
+```
 
+## Exercise 7
+
+What does the cbind command do?
+
+> Adding a new column into an existing matrix
+
+How about rbind?
+
+> Adding a new row into an existing matrix
+
+Create a new object “n” where the first row is a new row of numbers (your choice) and the following rows are the rows from matrix m. Optional: do the same but reverse the order of the rows from matrix m.
+
+```{r}
+n <- rbind(-5:-1,m)
+n
 ```
