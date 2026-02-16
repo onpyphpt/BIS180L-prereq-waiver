@@ -2,7 +2,7 @@
 ## Personal Information
 **Name** : Onpreeya Phetchpitak\
 **Major**: **Horticulture and Agronomy**\
-**Year**: *3rd year Ph.D.*\
+**Year**: *3rd year Ph.D.*
 
 ## Places Lived
 | City |  Start Year | End Year | 
@@ -19,5 +19,5 @@
 * Egg white oats are my current breakfast obsession.
 
 ## Upcoming Event
-**_The 15th UC Davis Plant Science Symposium_**\ will be held on May 1st, 2026 at UC Davis alumni center.\
+**_The 15th UC Davis Plant Science Symposium_** will be held on May 1st, 2026 at UC Davis alumni center.\
 More information [here](https://plantsciencesymposium.ucdavis.edu)
