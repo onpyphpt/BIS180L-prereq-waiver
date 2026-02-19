@@ -1,0 +1,36 @@
+---
+title: "Tidyverse"
+output: html_document
+---
+
+# Necessary Libraries
+
+```{r}
+library('tidyverse')
+```
+
+# Download the data
+
+```{r}
+height_data_clean <- read_csv("https://bis180ldata.s3.amazonaws.com/downloads/height_data_clean.csv")
+# View(height_data_clean) # just checking my data frame
+```
+
+# Jan 27 Data
+
+```{r}
+height_data_clean_Jan27 <- height_data_clean %>% 
+  filter(survey_date == '2023-01-27')
+# View(height_data_clean_Jan27) # just checking my data frame
+```
+
+# Height Summary
+
+```{r}
+height_avg_Jan27 <- height_data_clean_Jan27 %>% 
+  group_by(pop) %>% 
+  dplyr::summarize(
+    avg_height = mean(height_cm, na.rm = T)
+  )
+print(height_avg_Jan27, n = nrow(height_avg_Jan27))
+```
